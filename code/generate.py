@@ -11,7 +11,7 @@ from imutils import build_montages
 
 import torch
 prompts = torch.load('mit_prompts.pth')
-openai.api_key = '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'
+openai.api_key = 'YOUR_OPENAI_API_KEY'
 imgs = []
 for prom in prompts:
     sat,obj,p = prom[0],prom[1],prom[2]
